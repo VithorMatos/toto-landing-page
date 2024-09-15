@@ -1,0 +1,39 @@
+@use 'hero'; 
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'event'; 
+@use 'variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: variables.$textColor;
+    list-style: none;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+}
+
+body{
+    background-image: linear-gradient(to top, #1B0D09,#49392C, #2ABDC9,#3C6997);
+}
+
+footer {
+    background-color: #1B0D09;
+    text-align: center;
+    padding: 16px;
+}
